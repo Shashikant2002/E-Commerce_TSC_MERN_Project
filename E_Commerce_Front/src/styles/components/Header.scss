@@ -1,0 +1,166 @@
+.header {
+  // position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: $white;
+  top: 0;
+  left: 0;
+}
+.header .upperHeader a {
+  color: $white;
+}
+.header .upperHeader {
+  background: $primary;
+  padding: 5px 0;
+  color: $white;
+}
+.header .upperHeader .contact p {
+  gap: 5px;
+}
+.header .upperHeader .socal ul {
+  gap: 10px;
+}
+.header .upperHeader .socal a {
+  font-size: 20px;
+}
+
+.header .mainHeader {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.header .mainHeader .logo h2 {
+  color: $navTextColor;
+}
+.header .mainHeader nav ul {
+  gap: 40px;
+}
+.header .mainHeader nav ul li a {
+  color: $navTextColor;
+  position: relative;
+  padding: 0 3px;
+  z-index: 9999;
+}
+.header .mainHeader nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 10px;
+  background: rgba($color: $primary, $alpha: 0.5);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.header .mainHeader nav ul li a.active::after {
+  width: 100%;
+}
+.header .mainHeader nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header .mainHeader .searchBox {
+  position: relative;
+  gap: 10px;
+}
+.header .mainHeader .searchBox .search {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 999999;
+  background: $white;
+  border-radius: 5px;
+  padding: 00px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.header .mainHeader .searchBox .search.active {
+  padding: 20px;
+  height: 83px;
+  overflow: hidden;
+  animation: animate_box 0.3s linear;
+}
+
+@keyframes animate_box {
+  0% {
+    top: 110%;
+    opacity: 0;
+  }
+  100% {
+    top: 100%;
+    opacity: 1;
+  }
+}
+
+.header .mainHeader .searchBox input {
+  width: 350px;
+}
+.header .mainHeader .searchBox .search button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  height: 43px;
+  border: none;
+  outline: none;
+  background: $primary;
+  color: $white;
+  font-size: 24px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.header .mainHeader .cart_box {
+  position: relative;
+}
+.header .mainHeader .cart_box p {
+  position: absolute;
+  top: -12px;
+  right: -20px;
+  background: $primary;
+  color: $white;
+  padding: 2px 5px;
+  border-radius: 20px;
+}
+
+.header .mainHeader .afterLogin {
+  width: 50px;
+  position: relative;
+
+  button {
+    display: flex;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .mainMenu {
+    background: $white;
+    position: absolute;
+    z-index: 9999999;
+    width: 250px;
+    top: 100%;
+    right: 0;
+    overflow: hidden;
+    padding-top: 0px;
+    height: 0px;
+
+    &.active {
+      padding-top: 20px;
+      height: 150px;
+    }
+
+    li {
+      padding: 10px;
+      transition: 0.5s;
+
+      &:hover {
+        background: $primary_light;
+        cursor: pointer;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}

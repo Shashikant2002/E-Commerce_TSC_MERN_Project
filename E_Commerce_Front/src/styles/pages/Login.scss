@@ -1,0 +1,72 @@
+.login {
+  // border: 1px solid red;
+}
+
+.login .form {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  padding: 30px 30px;
+}
+
+.login .form .heading {
+  border-bottom: 1px solid $primary_light;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.login .form .input select{
+    padding: 15px 20px;  
+    background: transparent; 
+    outline: none;
+    border: 1px solid $backDrop;
+}
+.login .form .input select option{
+    padding: 10px;
+}
+.login .form .input input {
+  padding: 15px 20px;
+}
+.login .form .input {
+  margin-top: 20px;
+}
+.login .form .input label {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.login .form .globalBtn {
+  margin-top: 25px;
+  width: 100%;
+  justify-content: center;
+}
+.login .form .para {
+  margin-top: 20px;
+}
+.login .form .password {
+  position: relative;
+}
+.login .form .password .iconButton svg {
+  color: $navTextColor;
+  font-size: 30px;
+}
+.login .form .password .iconButton {
+  position: absolute;
+  bottom: 1px;
+  right: 0;
+}
+.login .form .googleLogin .globalBtn {
+  padding: 10px 0;
+  background: $googleBlue;
+  gap: 10px;
+}
+.login .form .googleLogin .globalBtn span svg {
+  font-size: 25px;
+}
+.login .form .googleLogin .globalBtn span {
+  background: $white;
+  padding: 5px;
+  border-radius: 50px;
+}

@@ -1,0 +1,51 @@
+.cart {
+  //   border: 1px solid red;
+}
+
+.cart .items .cardTitle {
+  border-bottom: 1px solid $primary;
+  padding: 15px 0;
+}
+.cart .items .heading:nth-child(1) {
+  width: 30%;
+}
+.cart .items .heading:nth-child(2) {
+  width: 20%;
+}
+.cart .items .heading:nth-child(3) {
+  width: 20%;
+}
+.cart .items .heading:nth-child(4) {
+  width: 20%;
+}
+.cart .items .heading:nth-child(5) {
+  width: 10%;
+}
+
+
+.cart .controlls{
+  // border: 1px solid red;
+  margin-top: 30px;
+}
+.cart .subtotals{
+  // border: 1px solid red;
+  margin-top: 30px;
+}
+.cart .subtotals .mainTotal{
+  width: 100%;
+  max-width: 400px;
+  background: $darkLight;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.cart .subtotals .area{
+  margin-top: 5px;
+}
+.cart .subtotals .area:nth-child(2){
+  margin-top: 10px;
+}
+.cart .subtotals .globalBtn{
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}

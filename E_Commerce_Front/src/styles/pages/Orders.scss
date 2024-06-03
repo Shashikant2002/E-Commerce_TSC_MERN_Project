@@ -1,0 +1,10 @@
+.orders_main{
+    // border: 1px solid red;
+}
+
+.orders_main .order{
+    margin-bottom: 20px;
+}
+.orders_main .order:last-child{
+    margin-bottom: 0;
+}

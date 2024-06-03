@@ -1,0 +1,42 @@
+.myProfile {
+  .container {
+    display: flex;
+  }
+
+  .tab {
+    border-right: 1px dotted $primary_light;
+    width: 250px;
+    padding: 0px;
+    padding-right: 20px;
+
+    ul li button {
+        width: 100%;
+        gap: 20px;
+        padding: 10px 30px;
+        color: $titleColor;
+    }
+    ul li button svg{
+        width: auto;
+        color: $titleColor;
+    }
+  }
+  .content {
+    width: calc(100% - 250px);
+    padding-left: 40px;
+
+    .profile{
+
+      h4{
+        gap: 10px;
+
+        span{
+          width: 100px;
+        }
+      }
+
+      .img{
+        width: 200px;
+      }
+    }
+  }
+}

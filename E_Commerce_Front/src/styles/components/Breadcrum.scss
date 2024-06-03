@@ -1,0 +1,15 @@
+.breadcrum {
+  background: linear-gradient(rgba($primary, 0), rgba($primary, 0)),
+    url("/bread_1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.breadcrum .heading {
+    color: $white;
+    text-align: center;
+}
+.breadcrum .subHeading{
+    color: $white;
+    text-align: center;
+}

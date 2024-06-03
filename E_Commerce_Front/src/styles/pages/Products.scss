@@ -1,0 +1,118 @@
+.productsPage {
+  // border: 1px solid red;
+}
+.productsPage .productsList .card {
+  width: 25%;
+  padding: 10px;
+}
+.productsPage .aside {
+  width: 100%;
+  max-width: 300px;
+}
+.productsPage .prodListing {
+  width: calc(100% - 300px);
+}
+.productsPage .loadmore {
+  margin-top: 20px;
+}
+.productsPage .filters {
+  padding-right: 20px;
+}
+.productsPage .filter {
+  padding: 15px 15px;
+  padding-bottom: 25px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 15px;
+}
+.productsPage .filter:first-child {
+  margin-top: 7px;
+}
+.productsPage .filter select {
+  padding: 5px 10px;
+  width: 100%;
+  outline: none;
+  margin-top: 10px;
+  border: 1px solid $navTextColor;
+}
+
+.productsPage .filter .heading {
+  position: relative;
+  width: fit-content;
+  padding: 0 5px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 50px;
+    height: 10px;
+    background: rgba($color: $primary, $alpha: 0.5);
+    z-index: -1;
+  }
+}
+
+.productsPage .filter input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+}
+
+.productsPage .filter input[type="range"]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: $darkLight;
+  border: none;
+  border-radius: 3px;
+}
+
+.productsPage .filter input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: $primary;
+  margin-top: -4px;
+  cursor: pointer;
+}
+
+.productsPage .filter input[type="range"]:focus {
+  outline: none;
+}
+
+.productsPage .filter input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: $backDrop;
+}
+
+.productsPage .filter .categories {
+  margin-top: 10px;
+}
+.productsPage .filter .globalBtn_2 {
+  text-align: start;
+  font-size: 17px;
+  text-transform: capitalize;
+  position: relative;
+  width: fit-content;
+  padding: 0 5px;
+  margin-top: 10px;
+  transition: 0.5s;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 0;
+    height: 10px;
+    background: rgba($color: $primary, $alpha: 0.5);
+    z-index: -1;
+  }
+  &:hover::after {
+    transition: 0.5s;
+    width: 100%;
+  }
+  &.active::after {
+    width: 100%;
+  }
+}

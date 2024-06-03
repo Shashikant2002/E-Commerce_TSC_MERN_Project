@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./colors.scss";
+@import "./components/Loading.scss";
+@import "./components/Header.scss";
+@import "./components/Card.scss";
+@import "./components/Footer.scss";
+@import "./components/Breadcrum.scss";
+@import "./pages/Home.scss";
+@import "./pages/Cart.scss";
+@import "./pages/Login.scss";
+@import "./pages/Products.scss";
+@import "./pages/Orders.scss";
+@import "./pages/MyProfile.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  // user-select: none;
+}
+
+li {
+  list-style: none;
+}
+img,
+svg {
+  display: flex;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+h6 {
+  font-size: 12px;
+}
+p {
+  font-size: 15px;
+}
+
+.pt_0 {
+  padding-top: 0 !important;
+}
+
+input {
+  outline: none;
+  border: 1px solid $backDrop;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+
+.flex {
+  display: flex;
+}
+.flexWrap {
+  flex-wrap: wrap;
+}
+.justifyContentCenter {
+  justify-content: center;
+}
+.justifyContentBetween {
+  justify-content: space-between;
+}
+.justifyContentStart {
+  justify-content: start;
+}
+.justifyContentEnd {
+  justify-content: flex-end;
+}
+
+.flexDirCol {
+  flex-direction: column;
+}
+
+.capitaliz{
+  text-transform: capitalize;
+}
+
+.alignCenter {
+  align-items: center;
+}
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  @media (max-width: 1300px) {
+    padding: 0 15px;
+  }
+}
+.container_flud {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+
+  @media (max-width: 1500px) {
+    padding: 0 15px;
+  }
+}
+
+.commonSection {
+  padding: 70px 0;
+}
+
+.globalBtn svg {
+  font-size: 20px;
+}
+.globalBtn {
+  outline: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  background: $primary;
+  color: $white;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: 500;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.globalBtn:hover {
+  background: $primary_light;
+}
+
+.globalBtn_2 {
+  outline: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.5s;
+  background: transparent;
+}
+.globalBtn_3 svg {
+  font-size: 20px;
+}
+.globalBtn_3 {
+  outline: none;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.5s;
+  background: transparent;
+  color: $primary;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.iconButton {
+  outline: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.5s;
+  background: transparent;
+  color: $danger;
+  padding: 10px 12px;
+  border-radius: 50px;
+}
+.iconButton:hover {
+  background: $darkLight;
+}
+
+.react-multi-carousel-track {
+  padding: 10px 0 !important;
+}
+
+// Heading All Section Start
+.mainHeading {
+  margin-bottom: 25px;
+}
+.mainHeading .heading {
+  position: relative;
+  width: fit-content;
+  padding: 0 10px;
+}
+.mainHeading .heading h2 {
+  color: $titleColor;
+}
+.mainHeading .view_all {
+  color: $primary;
+}
+.mainHeading .heading::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 50%;
+  background: rgba($color: $primary, $alpha: 0.5);
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+// Heading All Section End
